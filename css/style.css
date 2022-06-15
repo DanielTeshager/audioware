@@ -60,10 +60,11 @@ header nav ul li a:hover{
 /* hero */
 .hero{
     background-color: var(--bg-black);
-    height: 500px;
+    height: 100%;
 }
 .hero .container{
     display: flex;
+    position: relative;
 }
 .hero .hero-text{
     /* width: 50%; */
@@ -71,13 +72,45 @@ header nav ul li a:hover{
     /* background-color: var(--card-bg-white); */
     /* border-radius: 10px; */
     /* flex: 1; */
+    z-index: 1;
+    position: absolute;
+    width: 45%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
-
+.hero-text h1{
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+}
+.hero-text p{
+    width: 40ch;
+    font-size: 1rem;
+}
+.hero-text .btn{
+    color: var(--white);
+    padding: 15px 30px;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+}
+.hero-text .new-product{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-size: .8rem;
+}
+.hero-text .btn-primary{
+    background-color: var(--card-bg-orange);
+    border: none;
+}
 .hero .hero-image{
-    width: 80%;
-    height: 100%;
-    background-image: url('../assets/home/desktop/image-hero.jpg');
-    background-position: center;
+    width: 100%;
+    height: 554px;
+    background-image: url(../assets/home/desktop/image-hero.jpg);
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
