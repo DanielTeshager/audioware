@@ -53,7 +53,7 @@ header nav ul li a:hover{
 }
 /* utils */
 .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -108,9 +108,57 @@ header nav ul li a:hover{
 }
 .hero .hero-image{
     width: 100%;
-    height: 554px;
+    height: 458px;
     background-image: url(../assets/home/desktop/image-hero.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* product cards */
+.products{
+    margin-bottom: 9rem;
+}
+.product-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    gap: .5rem;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+}
+
+.product-card-image{
+    width: 80%;
+}
+
+.product-card-image img{
+    width: 100%;
+}
+
+.product-info{
+    background: var(--border-gray);
+    box-sizing: border-box;
+    padding: 20px;
+    position: absolute;
+    z-index: -9;
+    top: 126px;
+    width: 100%;
+    height: 70%;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.product-info a{
+    color: var(--white);
 }
