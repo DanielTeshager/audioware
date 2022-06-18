@@ -56,6 +56,7 @@ header nav ul li a:hover{
     width: 70%;
     margin: 0 auto;
 }
+
 .btn{
     color: var(--white);
     padding: 15px 30px;
@@ -80,6 +81,9 @@ header nav ul li a:hover{
     padding: .4rem .5rem;
 }
 
+span.orange{
+    color: var(--card-bg-orange);
+}
 /* hero */
 .hero{
     background-color: var(--bg-black);
@@ -183,6 +187,7 @@ header nav ul li a:hover{
 .featured-product{
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
 }
 
 .featured-card{
@@ -285,3 +290,86 @@ header nav ul li a:hover{
     border-radius: 0.5rem 0 0 0.5rem;
 }
 
+/* About section */
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about-text h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1;
+    letter-spacing: .2rem;
+}
+
+.about-text p{
+    font-size: .8rem;
+    width: 45ch;
+    line-height: 1.5;
+}
+
+.about-image{
+    width: 49%;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--bg-black);
+    padding:2rem 0;
+}
+
+footer a{
+    color: var(--white);
+}
+
+footer p{
+    width: 50ch;
+    font-size: .8rem;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    color: var(--bg-white);
+    gap: 1.2rem;
+}
+.main-footer-nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.copyright-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.copyright-social .social ul{
+    display: flex;
+    gap: 1rem;
+}
