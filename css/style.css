@@ -53,7 +53,7 @@ header nav ul li a:hover{
 }
 /* utils */
 .container{
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -90,25 +90,32 @@ header nav ul li a:hover{
     width: 40ch;
     font-size: 1rem;
 }
-.hero-text .btn{
+.btn{
     color: var(--white);
     padding: 15px 30px;
     cursor: pointer;
     width: fit-content;
     text-transform: uppercase;
 }
+
+.btn-primary{
+    background-color: var(--card-bg-orange);
+    border: none;
+}
+
+.btn-secondary{
+    background-color: var(--bg-black); 
+}
+
 .hero-text .new-product{
     text-transform: uppercase;
     letter-spacing: .5rem;
     font-size: .8rem;
 }
-.hero-text .btn-primary{
-    background-color: var(--card-bg-orange);
-    border: none;
-}
+
 .hero .hero-image{
     width: 100%;
-    height: 458px;
+    height: 402px;
     background-image: url(../assets/home/desktop/image-hero.jpg);
     background-position: bottom;
     background-size: cover;
@@ -157,8 +164,63 @@ header nav ul li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    gap: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
 }
 
 .product-info a{
     color: var(--white);
+}
+
+.featured-product{
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-card{
+    display: flex;
+    background-color: var(--card-bg-orange);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    max-height: 432px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-card-image{
+    position: relative;
+}
+
+.featured-card-image img{
+    position: relative;
+    bottom: -135px;
+    width: 130%;
+}
+
+.featured-card-description{
+    width: 44%;
+    padding-right: 10rem;
+    color: var(--card-bg-white);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.featured-card-description h3{
+    width: 10ch;
+    padding-right: 10rem;
+    color: var(--card-bg-white);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 1.2;
+}
+
+.featured-card-description p{
+    width: 34ch;
+    line-height: 1.5;
+    font-size: .8rem;
+    margin-bottom: 1rem;
 }
