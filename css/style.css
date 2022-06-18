@@ -56,6 +56,29 @@ header nav ul li a:hover{
     width: 70%;
     margin: 0 auto;
 }
+.btn{
+    color: var(--white);
+    padding: 15px 30px;
+    cursor: pointer;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background-color: var(--card-bg-orange);
+    border: none;
+}
+
+.btn-secondary{
+    background-color: var(--bg-black); 
+}
+
+.btn-no-background{
+    border: 1px solid;
+    color: var(--bg-black);
+    font-size: .8rem;
+    padding: .4rem .5rem;
+}
 
 /* hero */
 .hero{
@@ -89,22 +112,6 @@ header nav ul li a:hover{
 .hero-text p{
     width: 40ch;
     font-size: 1rem;
-}
-.btn{
-    color: var(--white);
-    padding: 15px 30px;
-    cursor: pointer;
-    width: fit-content;
-    text-transform: uppercase;
-}
-
-.btn-primary{
-    background-color: var(--card-bg-orange);
-    border: none;
-}
-
-.btn-secondary{
-    background-color: var(--bg-black); 
 }
 
 .hero-text .new-product{
@@ -224,3 +231,57 @@ header nav ul li a:hover{
     font-size: .8rem;
     margin-bottom: 1rem;
 }
+
+.mini-featured-card.speaker{
+    background-image: url(../assets/home/desktop/image-speaker-zx7.jpg);
+    min-height: 300px;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4rem;
+}
+
+.mini-featured-card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mini-featured-card-description h4{
+    text-transform: uppercase;
+
+}
+
+.mini-featured-card.earphone{
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.mini-featured-card.earphone .mini-featured-card-description{
+    background-color: var(--border-gray);
+    width: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+    justify-content: center;
+}   
+.mini-featured-card.earphone .mini-featured-card-description h4, 
+.mini-featured-card.earphone .mini-featured-card-description a{
+    transform: translateX(165px);
+}
+
+
+.mini-featured-card.earphone .mini-featured-image{
+    width: 100%;
+   min-height: 100%;
+}
+
+.mini-featured-card.earphone .mini-featured-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
