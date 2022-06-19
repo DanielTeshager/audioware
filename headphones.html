@@ -1,68 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
+ <link rel="stylesheet" href="./css/style.css"> 
+ <link rel="stylesheet" href="./css/products.css"> 
+  <title>Frontend Mentor | Earphones</title>
 </head>
-
 <body>
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Headphones
-
-  New product
+  <header>
+    <div class="container">
+      <h3 class="logo">
+        <a href="#">audiophile</a>
+      </h3>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Earphones</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <span class="shopping-cart">
+         <img src="./assets/shared/desktop/icon-cart.svg" alt="Cart Icon">
+          <span class="cart-count">0</span>
+        </span>
+      </div>
+    </div>
+  </header>
   
-  XX99 Mark II Headphones
-  The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium 
-  headphone experience by reproducing the balanced depth and precision of studio-quality sound.
-  
-  See product
+ <main>
+  <section class="banner">
+    <div class="container">
+      <div class="banner-text">
+          <h3>Headphones</h3>
+      </div>
+    </div>
+  </section>
 
-  XX99 Mark I Headphones
-  As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio 
-  reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
-  
-  See product
+<section class="container products">
+    <div class="products-card">
+        <div class="product-card">
+            <div class="product-description">
+                <span class="new-product">New Product</span>
+                <h3>XX99 Mark II Headphones</h3>
+                <p>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
+                <a href="#" class="btn btn-primary">see product</a>
+            </div>
+            <div class="product-image">
+                <img src="./assets/shared/desktop/image-xx59-headphones.jpg" alt="">
+            </div>
+        </div>
 
-  XX59 Headphones
-  Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. 
-  The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
-  
-  See product
+        <div class="product-card">
+            <div class="product-image">
+                <img src="./assets/shared/desktop/image-xx99-mark-one-headphones.jpg" alt="">
+            </div>
+            <div class="product-description">
+                <span class="new-product">New Product</span>
+                <h3>XX99 Mark I Headphones</h3>
+                <p>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
+                <a href="#" class="btn btn-primary">see product</a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-description">
+                <span class="new-product">New Product</span>
+                <h3>XX599 Headphones</h3>
+                <p>As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.</p>
+                <a href="#" class="btn btn-primary">see product</a>
+            </div>
+            <div class="product-image">
+                <img src="./assets/shared/desktop/image-xx99-mark-two-headphones.jpg" alt="">
+            </div>
+        </div>
+    </div>
 
-  Headphones
-  Shop
-  
-  Speakers
-  Shop
-  
-  Earphones
-  Shop
+</section>
+  <section class="container products">
+    <div class="product-cards">
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="./assets/shared/desktop/image-category-thumbnail-headphones.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h3 class="product-lable">Headphones</h3>
+          <a href="#" class="shop">
+            shop
+            <!-- right angle icon -->
+          </a>
+        </div>
+        
+        </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="./assets/shared/desktop/image-category-thumbnail-earphones.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h3 class="product-lable">Earphones</h3>
+          <a href="#" class="shop">
+            shop
+            <!-- right angle icon -->
 
-  Bringing you the best audio gear
-  Located at the heart of New York City, Audiophile is the premier store for high end headphones,
-  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
-  rooms available for you to browse and experience a wide range of our products. Stop by our store
-  to meet some of the fantastic people who make Audiophile the best place to buy your portable
+          </a>
+        </div>
+        
+        </div>
+      <div class="product-card">
+        <div class="product-card-image">
+          <img src="./assets/shared/desktop/image-category-thumbnail-speakers.png" alt="Product Image">
+        </div>
+        <div class="product-info">
+          <h3 class="product-lable">Speakers</h3>
+          <a href="#" class="shop">
+            shop
+            <!-- right angle icon -->
+
+          </a>
+        </div>
+        
+        </div>
+      </div>
+
+  </section>
+
+  <section class="about container">
+    <div class="about-text">
+      <h3>Bringing you the <span class="orange">best</span> audio gear</h3>
+      <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones, 
+  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration 
+  rooms available for you to browse and experience a wide range of our products. Stop by our store 
+  to meet some of the fantastic people who make Audiophile the best place to buy your portable 
   audio equipment.
+      </p>
+      
+    </div>
+    <div class="about-image">
+      <img src="./assets/shared/desktop/image-best-gear.jpg" alt="Best Gear">
+    </div>
+  </section>
+</main>
 
-  Home
-  Headphones
-  Speakers
-  Earphones
 
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
+
+<footer>
+  <div class="container">
+    <div class="main-footer-nav">
+      <h3 class="footer-logo">
+        <a href="#">audiophile</a>
+      </h3>
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Headphones</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Earphones</a></li>
+        </ul>
+      </nav>
+    </div>
+  <p>
+  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers 
+  and sound specialists who are devoted to helping you get the most out of personal audio. Come and 
   visit our demo facility - we’re open 7 days a week.
+  </p>
+  <div class="copyright-social">
+    <p>Copyright 2021. All Rights Reserved</p>
+    <div class="social">
+      <ul>
+        <li>
+          <a href="#"><img src="./assets/shared/desktop/icon-facebook.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/shared/desktop/icon-instagram.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="./assets/shared/desktop/icon-twitter.svg" alt=""></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</footer>
 
-  Copyright 2021. All Rights Reserved
 </body>
 </html>
