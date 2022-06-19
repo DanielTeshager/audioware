@@ -333,6 +333,7 @@ span.orange{
 footer{
     background-color: var(--bg-black);
     padding:2rem 0;
+    margin-top: 6rem;
 }
 
 footer a{
